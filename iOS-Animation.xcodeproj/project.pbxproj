@@ -16,6 +16,8 @@
 		D2B9AB4429CF0C2A002CBC91 /* iOS_AnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B9AB4329CF0C2A002CBC91 /* iOS_AnimationTests.swift */; };
 		D2B9AB4E29CF0C2A002CBC91 /* iOS_AnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B9AB4D29CF0C2A002CBC91 /* iOS_AnimationUITests.swift */; };
 		D2B9AB5029CF0C2A002CBC91 /* iOS_AnimationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B9AB4F29CF0C2A002CBC91 /* iOS_AnimationUITestsLaunchTests.swift */; };
+		D2B9AB5D29CF16A3002CBC91 /* ApiAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B9AB5C29CF16A3002CBC91 /* ApiAnimationView.swift */; };
+		D2B9AB5F29CF16B8002CBC91 /* CustomAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B9AB5E29CF16B8002CBC91 /* CustomAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		D2B9AB4929CF0C2A002CBC91 /* iOS-AnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-AnimationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B9AB4D29CF0C2A002CBC91 /* iOS_AnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_AnimationUITests.swift; sourceTree = "<group>"; };
 		D2B9AB4F29CF0C2A002CBC91 /* iOS_AnimationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_AnimationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D2B9AB5C29CF16A3002CBC91 /* ApiAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAnimationView.swift; sourceTree = "<group>"; };
+		D2B9AB5E29CF16B8002CBC91 /* CustomAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				D2B9AB3629CF0C2A002CBC91 /* Persistence.swift */,
 				D2B9AB3829CF0C2A002CBC91 /* iOS_Animation.xcdatamodeld */,
 				D2B9AB3329CF0C2A002CBC91 /* Preview Content */,
+				D2B9AB5C29CF16A3002CBC91 /* ApiAnimationView.swift */,
+				D2B9AB5E29CF16B8002CBC91 /* CustomAnimationView.swift */,
 			);
 			path = "iOS-Animation";
 			sourceTree = "<group>";
@@ -263,9 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2B9AB5F29CF16B8002CBC91 /* CustomAnimationView.swift in Sources */,
 				D2B9AB3A29CF0C2A002CBC91 /* iOS_Animation.xcdatamodeld in Sources */,
 				D2B9AB3729CF0C2A002CBC91 /* Persistence.swift in Sources */,
 				D2B9AB3029CF0C29002CBC91 /* ContentView.swift in Sources */,
+				D2B9AB5D29CF16A3002CBC91 /* ApiAnimationView.swift in Sources */,
 				D2B9AB2E29CF0C29002CBC91 /* iOS_AnimationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
