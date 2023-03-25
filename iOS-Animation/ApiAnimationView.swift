@@ -12,7 +12,7 @@ struct ApiAnimationView: View {
     var body: some View {
 
         VStack{
-            
+            ApiLottieAnimationView(url: URL(string: "https://assets4.lottiefiles.com/datafiles/0BklE7L1HhdHa4v/data.json")!)
            Button{
                 
             } label: {

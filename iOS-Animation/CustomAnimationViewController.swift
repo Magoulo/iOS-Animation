@@ -13,8 +13,8 @@ struct CustomLottieAnimationView: UIViewRepresentable{
     func makeUIView(context: UIViewRepresentableContext<CustomLottieAnimationView>) -> some UIView {
         let view = UIView(frame: .zero)
         var animationView = LottieAnimationView()
-        let animation = LottieAnimation.named("star")
-        animationView = LottieAnimationView(animation: animation)
+        let customAnimation = LottieAnimation.named("star")
+        animationView = LottieAnimationView(animation: customAnimation)
         
         animationView.contentMode = .scaleAspectFit
         animationView.loopMode = .repeat(50)
