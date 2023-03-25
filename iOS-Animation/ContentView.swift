@@ -26,11 +26,18 @@ struct ContentView: View {
                 } label: {
                     Text("API")
                 }
+                .frame(width: 200,height: 100)
+                .background(Color.green)
+                .padding()
+                
                 Button{
                     customAnimation.toggle()
                 } label: {
                     Text("Custom")
                 }
+                .frame(width: 200,height: 100)
+                .background(Color.yellow)
+                .padding()
                 
                 NavigationLink(isActive: $apiAnimation){
                     ApiAnimationView()

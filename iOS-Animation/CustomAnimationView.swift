@@ -9,7 +9,17 @@ import SwiftUI
 
 struct CustomAnimationView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            CustomLottieAnimationView()
+            Button{
+                
+            } label: {
+                Text("Start")
+            }
+            .navigationBarTitle(Text("Custom Animation Experiment"))
+            .frame(width: 200,height: 100)
+            .background(Color.purple)
+        }
     }
 }
 
