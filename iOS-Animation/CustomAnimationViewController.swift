@@ -10,6 +10,7 @@ import Lottie
 import SwiftUI
 
 struct CustomLottieAnimationView: UIViewRepresentable{
+    
     func makeUIView(context: UIViewRepresentableContext<CustomLottieAnimationView>) -> some UIView {
         let view = UIView(frame: .zero)
         var animationView = LottieAnimationView()
