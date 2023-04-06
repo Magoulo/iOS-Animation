@@ -11,6 +11,7 @@ import SwiftUI
 
 struct ApiLottieAnimationView: UIViewRepresentable{
     var url: URL
+    
     func makeUIView(context: UIViewRepresentableContext<ApiLottieAnimationView>) -> some UIView {
         let view = UIView(frame: .zero)
         let animationView = LottieAnimationView()
@@ -32,9 +33,8 @@ struct ApiLottieAnimationView: UIViewRepresentable{
         ])
         
         return view
-   //    animationView = LottieAnimationView(animation: apiAnimation)
     }
     func updateUIView(_ uiView: UIViewType, context: Context) {
-        
     }
+ 
 }
