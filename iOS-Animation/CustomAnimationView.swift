@@ -20,6 +20,18 @@ struct CustomAnimationView: View {
     @State private var runLineAnimation = false
     
     
+    //Maybe we can use timelineView? Resets the view.
+    func runAnimations() {
+        for i in 0..<15 {
+            DispatchQueue.main.asyncAfter(deadline: .now() + (2.0 * Double(i))) {
+                runBoxAnimation.toggle()
+                runLineAnimation.toggle()
+            }
+        }
+    }
+
+    
+    
     var body: some View {
         HStack{
             GeometryReader { geometry in
@@ -27,8 +39,9 @@ struct CustomAnimationView: View {
                     Rectangle()
                         .fill(color)
                         .cornerRadius(8)
-                        .frame(width: xScale, height: yScale)
-                        .offset(x:geometry.size.width / 2 - xScale / 2, y: position)
+                        .frame(width: 50, height: 50)
+                        .scaleEffect(CGSize(width: xScale/50, height: yScale/50), anchor: .bottom)
+                        .offset(x:geometry.size.width / 2 - 25, y: position)
                         .onChange(of: runBoxAnimation) { newValue in
                             if newValue {
                                 withAnimation(Animation.linear(duration: 0.4).delay(0)) {
@@ -101,9 +114,12 @@ struct CustomAnimationView: View {
                                 withAnimation(Animation.linear(duration: 0.8).delay(3.2)) {
                                     color = .blue
                                 }
-                                withAnimation(Animation.linear(duration: 0.4).delay(3.6)) {
+                                withAnimation(Animation.linear(duration: 0.3).delay(3.6)) {
                                     yScale = 50
                                     xScale = 50
+                                }
+                                withAnimation(Animation.linear(duration: 0.1).delay(3.9)) {
+                                    position = 0
                                 }
                             }
                         }
@@ -134,8 +150,11 @@ struct CustomAnimationView: View {
                                     withAnimation(Animation.linear(duration: 0.2).delay(2.68)) {
                                         opacity = 1
                                     }
-                                    withAnimation(Animation.linear(duration: 0.8).delay(3)) {
+                                    withAnimation(Animation.linear(duration: 0.7).delay(3)) {
                                         opacity = 1
+                                    }
+                                    withAnimation(Animation.linear(duration: 0.1).delay(3.9)) {
+                                        opacity = 0
                                     }
                                 }
                             }
@@ -146,13 +165,12 @@ struct CustomAnimationView: View {
         
         
         Button("Start") {
-            runBoxAnimation.toggle()
-            runLineAnimation.toggle()
-        }
-        .navigationBarTitle(Text("Custom Animation Experiment"))
-        .frame(width: 200,height: 100)
-        .background(Color.black)
-        .padding()
+                    runAnimations()
+                }
+                .navigationBarTitle(Text("Custom Animation Experiment"))
+                .frame(width: 200,height: 100)
+                .background(Color.black)
+                .padding()
     }
 }
 
