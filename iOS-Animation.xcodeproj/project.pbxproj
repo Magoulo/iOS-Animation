@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D23B6C142A000BD70051C20D /* lottieAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = D23B6C132A000BD70051C20D /* lottieAnimation.json */; };
 		D2B9AB2E29CF0C29002CBC91 /* iOS_AnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B9AB2D29CF0C29002CBC91 /* iOS_AnimationApp.swift */; };
 		D2B9AB3029CF0C29002CBC91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B9AB2F29CF0C29002CBC91 /* ContentView.swift */; };
 		D2B9AB3229CF0C2A002CBC91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2B9AB3129CF0C2A002CBC91 /* Assets.xcassets */; };
@@ -20,7 +21,6 @@
 		D2B9AB5F29CF16B8002CBC91 /* CustomAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B9AB5E29CF16B8002CBC91 /* CustomAnimationView.swift */; };
 		D2B9AB6229CF3CDE002CBC91 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D2B9AB6129CF3CDE002CBC91 /* Lottie */; };
 		D2B9AB6429CF3E28002CBC91 /* CustomAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B9AB6329CF3E28002CBC91 /* CustomAnimationViewController.swift */; };
-		D2B9AB6629CF4C81002CBC91 /* star.json in Resources */ = {isa = PBXBuildFile; fileRef = D2B9AB6529CF4C81002CBC91 /* star.json */; };
 		D2B9AB6829CF5A43002CBC91 /* ApiAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B9AB6729CF5A43002CBC91 /* ApiAnimationViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D23B6C132A000BD70051C20D /* lottieAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottieAnimation.json; sourceTree = "<group>"; };
 		D2B9AB2A29CF0C29002CBC91 /* iOS-Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B9AB2D29CF0C29002CBC91 /* iOS_AnimationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_AnimationApp.swift; sourceTree = "<group>"; };
 		D2B9AB2F29CF0C29002CBC91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,7 +58,6 @@
 		D2B9AB5C29CF16A3002CBC91 /* ApiAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAnimationView.swift; sourceTree = "<group>"; };
 		D2B9AB5E29CF16B8002CBC91 /* CustomAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationView.swift; sourceTree = "<group>"; };
 		D2B9AB6329CF3E28002CBC91 /* CustomAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationViewController.swift; sourceTree = "<group>"; };
-		D2B9AB6529CF4C81002CBC91 /* star.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = star.json; sourceTree = "<group>"; };
 		D2B9AB6729CF5A43002CBC91 /* ApiAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAnimationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,8 +90,7 @@
 		D2B9AB2129CF0C29002CBC91 = {
 			isa = PBXGroup;
 			children = (
-				D2B9AB6729CF5A43002CBC91 /* ApiAnimationViewController.swift */,
-				D2B9AB6529CF4C81002CBC91 /* star.json */,
+				D23B6C132A000BD70051C20D /* lottieAnimation.json */,
 				D2B9AB2C29CF0C29002CBC91 /* iOS-Animation */,
 				D2B9AB4229CF0C2A002CBC91 /* iOS-AnimationTests */,
 				D2B9AB4C29CF0C2A002CBC91 /* iOS-AnimationUITests */,
@@ -120,6 +119,7 @@
 				D2B9AB3329CF0C2A002CBC91 /* Preview Content */,
 				D2B9AB5C29CF16A3002CBC91 /* ApiAnimationView.swift */,
 				D2B9AB5E29CF16B8002CBC91 /* CustomAnimationView.swift */,
+				D2B9AB6729CF5A43002CBC91 /* ApiAnimationViewController.swift */,
 				D2B9AB6329CF3E28002CBC91 /* CustomAnimationViewController.swift */,
 			);
 			path = "iOS-Animation";
@@ -261,7 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2B9AB3529CF0C2A002CBC91 /* Preview Assets.xcassets in Resources */,
-				D2B9AB6629CF4C81002CBC91 /* star.json in Resources */,
+				D23B6C142A000BD70051C20D /* lottieAnimation.json in Resources */,
 				D2B9AB3229CF0C2A002CBC91 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

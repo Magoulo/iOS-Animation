@@ -20,10 +20,11 @@ struct CustomAnimationView: View {
     @State private var runLineAnimation = false
     
     
-    //Maybe we can use timelineView? Resets the view.
-    func runAnimations() {
+func runAnimations() {
+        
         for i in 0..<15 {
-            DispatchQueue.main.asyncAfter(deadline: .now() + (2.0 * Double(i))) {
+            let delay = Double(i) * 4.5
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
                 runBoxAnimation.toggle()
                 runLineAnimation.toggle()
             }
@@ -118,8 +119,9 @@ struct CustomAnimationView: View {
                                     yScale = 50
                                     xScale = 50
                                 }
-                                withAnimation(Animation.linear(duration: 0.1).delay(3.9)) {
+                                withAnimation(Animation.linear(duration: 0.0001).delay(3.9999)) {
                                     position = 0
+                                    runBoxAnimation.toggle()
                                 }
                             }
                         }
@@ -150,11 +152,12 @@ struct CustomAnimationView: View {
                                     withAnimation(Animation.linear(duration: 0.2).delay(2.68)) {
                                         opacity = 1
                                     }
-                                    withAnimation(Animation.linear(duration: 0.7).delay(3)) {
+                                    withAnimation(Animation.linear(duration: 0.8).delay(3)) {
                                         opacity = 1
                                     }
-                                    withAnimation(Animation.linear(duration: 0.1).delay(3.9)) {
+                                    withAnimation(Animation.linear(duration: 0.0001).delay(3.9999)) {
                                         opacity = 0
+                                        runLineAnimation.toggle()
                                     }
                                 }
                             }
